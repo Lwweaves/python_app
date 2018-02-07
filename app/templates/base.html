@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Microapp</title>
+    {% else %}
+    <title>Welcome to my mini app!</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Microapp: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
